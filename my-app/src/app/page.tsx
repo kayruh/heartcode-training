@@ -12,12 +12,12 @@ export default function Home() {
     <br/>
       <p className="text-sm text-center"> Cycle of drug abuse: </p>
       <div className="flex flex-row justify-center align-center" >
-        <Image src ={drugpic} width="700" height="800"/>
+        <Image src ={drugpic} alt ="cycle of drug abuse pic" width="700" height="800"/>
       </div>
       <br/>
       <p className="text-sm text-center"> If you or someone you know wants to overcome durg addiction, here are some tips </p>
       <div className="flex flex-row justify-center align-center">
-        <Image src ={overcomepic} width="700" height = "800"/>
+        <Image src ={overcomepic} alt ="tips to overcome addiction"width="700" height = "800"/>
       </div>
       <br/>
       <br/>
