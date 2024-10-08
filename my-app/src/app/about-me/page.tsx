@@ -29,14 +29,6 @@ export default function AboutMe() {
             </CardContent>
         </Card>
 
-        <Alert>
-          <Terminal className="h-4 w-4" />
-          <AlertTitle>Heads up!</AlertTitle>
-          <AlertDescription>
-            this is the alert
-          </AlertDescription>
-        </Alert>
-
     </div>
   );
 }
