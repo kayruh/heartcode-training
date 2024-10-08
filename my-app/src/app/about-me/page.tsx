@@ -1,0 +1,27 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+export default function AboutMe() {
+  return (
+    <div>
+        Hello world this is the about me route
+        <Card>
+            <CardHeader>
+                <CardTitle>
+                    Hello I am Keira
+                </CardTitle>
+                <CardDescription>
+                    I like to go to cafes
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <div className="flex flex-row gap-2">
+                    <p className="font-bold">Name:</p>
+                    Keira
+                </div>
+                <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+                <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to cafe hop :D</div>
+            </CardContent>
+        </Card>
+    </div>
+  );
+}
