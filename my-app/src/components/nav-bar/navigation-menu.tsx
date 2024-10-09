@@ -1,6 +1,12 @@
 "use client"
 import { NavigationMenu } from "../ui/navigation-menu";
 import { NavigationItem, NavItem } from "@/components/nav-bar/navigation-item";
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+  } from '@clerk/nextjs';
 
 const navItems: NavItem[] = [
 	{ navigationLink: "/", navigationDescription: "Project Heartcode" },
@@ -15,9 +21,18 @@ export default function NavigationBar() {
             	{navItems.map((navItem, index) => <NavigationItem key={index} navigationLink={navItem.navigationLink} navigationDescription={navItem.navigationDescription} />)}
         	</div>
         	<div className="flex flex-row justify-end">
+                <div className="flex gap-4">
             	<ModeToggle/>
+                <SignedOut>
+                    <SignInButton />
+                </SignedOut>
+                <SignedIn>
+                    <UserButton/>
+                </SignedIn>
+            </div>
         	</div>
     	</NavigationMenu>
+        
 	)
 }
 
@@ -60,8 +75,6 @@ function ModeToggle() {
     </DropdownMenu>
   )
 }
-
-
 
 
 // day 2 

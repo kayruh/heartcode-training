@@ -1,14 +1,26 @@
 
 import { FlipWords } from "@/components/ui/flip-words";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Home() {
   const words: string[] = ["cool pookie", "it", "skibidi"];
   return (
+    <AuroraBackground className="h-[1000px]">
 	<div>
   	<div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center">
-    	<h1 className="font-bold text-5xl">Taking drugs is not<FlipWords words={words}/></h1>
+    	<h1 className="font-bold text-5xl text-left text-neutral-900 dark:text-neutral-100">Taking drugs is not<FlipWords words={words}/></h1>
   	</div>
+    <br>
+    </br>
+    <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center">
+      <h1 className="font-bold text-2xl text-left text-neutral-900 dark:text-neutral-100"> 
+        Drugs affect the body's central nervous system. It affects the way an individual thinks, feels and behaves. </h1>
+      
+      <p>Drug abuse is defined as the use of a drug in amounts or methods that is harmful to the individual or others.</p>
+      
+    </div>
 	</div>
+  </AuroraBackground>
   )
 }
 

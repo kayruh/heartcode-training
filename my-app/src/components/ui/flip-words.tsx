@@ -58,7 +58,8 @@ export const FlipWords = ({
           position: "absolute",
         }}
         className={cn(
-          "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2",
+          "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2", 
+          // this line is saying ...neutral-900 at all times, BUT if dark mode text will be text-neutral-100
           className
         )}
         key={currentWord}
