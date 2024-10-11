@@ -4,8 +4,10 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
 import { CardHoverEffectDemo } from "@/components/inforcards/infocards";
+import React from "react";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+
 
 export default function Home() {
   const words: string[] = ["cool pookie", "the way to go", "skibidi","yay"];
@@ -27,7 +29,9 @@ export default function Home() {
           <h1 className="text-xl text-left text-neutral-900 dark:text-neutral-100"> 
             Drugs affect the body's central nervous system. It affects the way an individual thinks, feels and behaves. </h1>
             <br></br>
-            <Link href="/#card" className={buttonVariants({ variant: "secondary" })}>Click here</Link>
+              <HoverBorderGradient>
+              <Link href="/#card">Click here to find out more</Link>
+              </HoverBorderGradient>
 
         </div>
         <div id="card">
@@ -39,8 +43,6 @@ export default function Home() {
     </AuroraBackground>
   )
 }
-
-
 
 
 

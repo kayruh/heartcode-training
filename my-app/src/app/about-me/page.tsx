@@ -1,15 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-// import {
-//   Alert,
-//   AlertDescription,
-//   AlertTitle,
-// } from "@/components/ui/alert"
-// import { Terminal } from "lucide-react"
+
 
 export default function AboutMe() {
   return (
     <div>
-        Hello world this is the about me route
+        <h1 className="font-bold text-2xl">Hello world this is the about me route</h1>
+        <br></br>
         <Card>
             <CardHeader>
                 <CardTitle>
@@ -28,7 +24,6 @@ export default function AboutMe() {
                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to cafe hop :D</div>
             </CardContent>
         </Card>
-
     </div>
   );
 }

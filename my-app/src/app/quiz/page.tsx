@@ -10,6 +10,9 @@ import { useToast } from "@/hooks/use-toast";
 import { db } from "@/db";
 import { insertOneUser } from "../server/user";
 import { PgInsertBase } from "drizzle-orm/pg-core";
+import Link from "next/link";
+import { TypewriterEffectDemo } from "@/components/typewriter/typewriter";
+
 
 const FormSchema = z.object({
 	name: z.string({
@@ -50,6 +53,10 @@ export default function Quiz() {
 
 
 	return (
+        <div>
+        <TypewriterEffectDemo>
+        </TypewriterEffectDemo>
+        
     	<Form {...form}>
         	<form onSubmit={form.handleSubmit(onSubmit)} className="w2/3 space-y-6">
             	<FormField
@@ -91,6 +98,8 @@ export default function Quiz() {
             	<Button type="submit">Submit</Button>
         	</form>
     	</Form>
+        </div>
+    
 	)
 }
 
